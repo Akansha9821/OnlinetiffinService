@@ -1,0 +1,26 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: Berlin Sans FB;
+}
+a{
+    text-decoration: none;
+}
+li{list-style: none;}
+a.hover{
+    text-decoration: none;
+}
+.kitchen-crousal{
+    height:50vh;
+    width:100%;
+    content:"";
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.carousel-item img{
+    height: 50vh;
+    width: 100%;
+}

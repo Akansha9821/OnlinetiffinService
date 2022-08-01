@@ -1,0 +1,336 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/index.css' %}">
+    <link rel="stylesheet" href="{% static 'css/loginsignup.css' %}">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Online Tiffin Services | index</title>
+  </head>
+  <body>
+    {% block body-block %}
+    <div class="navcontent">
+      <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container p-2 text-capitalize">
+                <a class="navbar-brand font-weight-bold text-white " href="#">Online Tiffin</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+            
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Add Kitchen</a>
+                    </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="#">Track Order</a>
+                    </li>
+                    
+                    <li class="nav-item">
+                    <a class="nav-link" href="#">Login</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Signup</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Checkout Order(1)</a>
+                    </li>
+                </ul>
+                </div>
+            </div>
+        </nav>
+        <section class="row content">
+          <div class="col-6 left">
+            <marquee  class="marquee" direction = "up"  Scrolldelay=200 >Hungry ?</marquee>
+            <p>Order food from favourite restaurants near you.</p>
+            <form>
+              <input class="form-control" type="search" placeholder="Enter You're Location" aria-label="Search">
+              <button class="btn  my-2 my-sm-0" type="submit">Search</button>
+            </form>
+          </div>
+          <div class="col-6 right">
+          </div>
+        </section>
+      <div>
+
+      
+      <!-- restaurants div-->
+      <section class="restaurants">
+        <div class="container">
+          <h1 class="text-center font-weight-bold ">Top Kitchen</h1>
+          <hr class="style1">
+          <!-- Crousal start-->
+
+          <div id="demo" class="carousel slide" data-ride="carousel">
+
+            <!-- Indicators -->
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <!-- The slideshow -->
+            <div class="carousel-inner">
+
+
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal1.jpg' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"rest-name">Name</h3>
+                      <h5 class-"rest-description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal2.png' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"rest-name">Name</h3>
+                      <h5 class-"rest-description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal3.jpg' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"rest-name">Name</h3>
+                      <h5 class-"rest-description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal4.jpg' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"name">Name</h3>
+                      <h5 class-"description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="carousel-item ">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal1.jpg' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"rest-name">Name</h3>
+                      <h5 class-"rest-description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal1.jpg' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"rest-name">Name</h3>
+                      <h5 class-"rest-description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal1.jpg' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"rest-name">Name</h3>
+                      <h5 class-"rest-description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal1.jpg' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"rest-name">Name</h3>
+                      <h5 class-"rest-description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+
+              <div class="carousel-item ">
+                <div class="row">
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal1.jpg' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"rest-name">Name</h3>
+                      <h5 class-"rest-description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal1.jpg' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"rest-name">Name</h3>
+                      <h5 class-"rest-description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal1.jpg' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"rest-name">Name</h3>
+                      <h5 class-"rest-description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg-3 col-md-3 col-12">
+                    <div class="box">
+                      <a href="#"><img src="{% static 'img/meal1.jpg' %}" alt="meal1" class="img-fluidi img-thumbnail"></img></a>
+                      <h3 class-"rest-name">Name</h3>
+                      <h5 class-"rest-description">Description</h5>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star checked"></span>
+                      <span class="fa fa-star"></span>
+                      <div class = "restorent-btn">
+                        <a href="#" class="btn ">Quick View</a>
+                        <a href="#" class="btn">Add To Card</a>
+                      </div>
+                    </div>
+                  </div> 
+                </div>
+              </div>
+            </div>
+            <!-- Left and right controls -->
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          
+          </div>
+
+
+
+        </div>
+      </section>
+
+
+      <!-- Start Footer Class from here-->
+      <footer class="footer">
+        <p class="text-center font-weight-bold text-lighten-4 copyright">&copy; 2019. All rights reserved</p>
+
+      </footer>
+
+    {% endblock body-block %}
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script>
+      $(document).ready(function() {
+        $('#rateMe1').mdbRate();
+      });
+    </script>
+  </body>
+</html>

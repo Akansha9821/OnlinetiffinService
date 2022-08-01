@@ -1,0 +1,40 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Online Tiffin Services | Login</title>
+  </head>
+  <body>
+    <div class="loginform">
+        <div class="container">
+        <form>
+            <div class="formrow">
+                <h1>SignIn</h1> 
+                <input type="text" class="form-control" placeholder="Username">
+                <input type="text" class="form-control" placeholder="Password">
+                <button type="button" class="btn btn-warning">Sign In</button>
+            </div>
+        </form>
+        <h5>Login With</h5>
+        <div class="social-media-icon">
+            <button type="button" class="btn btn-outline-warning"><i class="fa fa-facebook" aria-hidden="true"></i></button>
+            <button type="button" class="btn btn-outline-warning"><i class="fa fa-envelope-o" aria-hidden="true"></i></button>
+            <p class="text-white text-center">Create Account <a href="{% url 'signup' %}" target="_blank">Register With US</a></p>
+        </div>
+        </div>
+    </div>
+
+    <script src="{% static 'js/jquery-3.2.1.slim.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+  </body>
+</html>
